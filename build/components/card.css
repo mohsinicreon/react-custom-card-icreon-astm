@@ -1,0 +1,11 @@
+.card {
+  box-shadow: inset 2px -3px 6px -4px #61dafb;
+  transition: 0.3s;
+  padding: 0px 30px;
+  margin: 17px 0px 0px 0px;
+  }
+  
+  .card:hover {
+    transition: 0.3s;
+    box-shadow: 2px -3px 6px -4px #61dafb;
+  }

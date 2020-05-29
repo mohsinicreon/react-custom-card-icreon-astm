@@ -1,9 +1,13 @@
 {
   "name": "react-custom-card-icreon-astm",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "private": false,
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "build/index.js",
+  "module": "build/index.js",
+  "files": [
+    "build",
+    "README.md"
+  ],
   "babel": {
     "presets": [
       "@babel/preset-react"
@@ -23,10 +27,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "SET NODE_ENV=production && if exist build rmdir /s /q build && mkdir build && copy README.md build && npx babel src --out-dir build --copy-files",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "publish:npm": "SET NODE_ENV=production && if exist dist rmdir /s /q dist && mkdir dist && npx babel src/components --out-dir dist --copy-files"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
