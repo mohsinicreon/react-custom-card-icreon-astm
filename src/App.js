@@ -17,7 +17,7 @@ function App() {
         </a>
 
         <Card>
-          <h1>Hello Developer!, <br />I am new card component!</h1>
+          <h1>Hello Developer, <br />I am new card component!!</h1>
         </Card>
       </header>
     </div>
